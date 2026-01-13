@@ -1,8 +1,13 @@
 class Cafea
-    def __init__(self,nume,tara_origine,pret):
+    def __init__(self,id,nume,tara_origine,pret):
+        self.__id=id
         self.__nume=nume
         self.__tara_origine=tara_origine
         self.__pret=pret
+
+    @property
+    def id(self):
+        return self.__id
 
     @property
     def nume(self):
